@@ -6,5 +6,4 @@ allowBuilds:
 ignoredBuiltDependencies:
   - '@markuxt/markuxt'
 minimumReleaseAgeExclude:
-  - '@markuxt/markuxt@0.1.15'
-  - '@markuxt/markuxt@0.1.19'
+  - '@markuxt/markuxt'
