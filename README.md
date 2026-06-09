@@ -13,7 +13,7 @@ Clone this template to spin up a multilingual (English / 简体中文) site for 
 - **Markdown-first content** — add members, news, publications, projects, and positions as `.md` files
 - **Multilingual** — English and Simplified Chinese out of the box (extensible)
 - **Co-located assets** — images/videos live next to their Markdown
-- **Themable** — override design tokens in `styles/_tokens.css`
+- **Themable** — pick a preset in `nuxt.config.ts`, then fine-tune tokens in `styles/_tokens.css`
 - **Static deployment** — `pnpm generate` → deploy to GitHub Pages or any static host
 
 ## Tech Stack
@@ -85,6 +85,9 @@ Replace placeholder values in `en.json` and `zh-CN.json`:
 ```ts
 appConfig: {
   markuxt: {
+    theme: {
+      preset: 'ocean',                          // or 'forest' | 'sunset' | 'slate'
+    },
     logo: { src: '/images/default.jpg' },          // → your logo
     contact: {
       email: 'contact@your-lab.edu',               // → your email
@@ -96,6 +99,8 @@ appConfig: {
 }
 ```
 
+Theme presets are meant to be chosen in repo config, not switched by site visitors. `ocean` matches the original markuxt look; `forest`, `sunset`, and `slate` give you alternate palettes with the same component system.
+
 ### 3. Images — `src/public/images/`
 
 Replace the placeholders with your own:
@@ -105,9 +110,9 @@ Replace the placeholders with your own:
 
 Reference them as `/images/<file>` (e.g. `/images/your-logo.png`).
 
-### 4. Design tokens — `styles/_tokens.css`
+### 4. Fine-tune design tokens — `styles/_tokens.css`
 
-Override colors, fonts, spacing, etc.:
+After choosing a preset, you can still override colors, fonts, spacing, and other tokens:
 
 ```css
 :root {

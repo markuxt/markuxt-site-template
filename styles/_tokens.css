@@ -1,20 +1,15 @@
 /* ============================================
    Design Tokens — CSS Custom Properties
+   These are optional overrides on top of the
+   preset selected in nuxt.config.ts.
    ============================================ */
 
 :root {
-  /* Colors */
-  --color-primary: #0a2540;
-  --color-primary-light: #1a3a5c;
-  --color-accent: #00d9ff;
-  --color-accent-hover: #00b8d9;
-  --color-secondary: #009bc1;
-  --color-secondary-light: #4db8d1;
-  --color-bg: #f8fafc;
-  --color-bg-alt: #ffffff;
-  --color-text: #0f172a;
-  --color-text-muted: #64748b;
-  --color-border: #e2e8f0;
+  /*
+   * Theme colors come from markuxt's preset + mode system.
+   * Only add color overrides here if you intentionally want to replace
+   * the preset across both light and dark modes.
+   */
 
   /* Typography */
   --font-display: 'Fraunces', serif;
