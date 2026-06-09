@@ -12,8 +12,8 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@markuxt/markuxt": "^0.1.15",
     "@icon-park/vue-next": "^1.4.2",
+    "@markuxt/markuxt": "^0.1.19",
     "@nuxt/content": "^2.13.4",
     "@nuxtjs/i18n": "^10.4.0",
     "katex": "0.16.47",
@@ -25,6 +25,6 @@
   "devDependencies": {
     "@types/node": "^25.9.2",
     "typescript": "^5.9.3",
-    "vue-tsc": "^3.3.3"
+    "vue-tsc": "^3.3.4"
   }
 }
